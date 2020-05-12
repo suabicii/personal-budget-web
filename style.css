@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  --primaryColor: #1e90ff;
+  --secondaryColor: #ffa500;
 }
 
 .container {
@@ -32,9 +34,9 @@ a {
 }
 
 #register {
-  background-color: dodgerblue;
+  background-color: var(--primaryColor);
 }
 
 #login {
-  background-color: orange;
+  background-color: var(--secondaryColor);
 }
