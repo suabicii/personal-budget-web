@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1080px;
+}
+
+.user-menu {
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 25vh / 2);
+  left: calc(50% - 25vh / 2);
+}
+
+ul li {
+  list-style: none;
+  display: block;
+  margin-bottom: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+#register {
+  background-color: dodgerblue;
+}
+
+#login {
+  background-color: orange;
+}
