@@ -18,6 +18,7 @@ header {
 .title {
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .container {
@@ -54,4 +55,19 @@ a {
 
 #login {
   background-color: var(--secondaryColor);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  background-color: #222930;
+}
+
+.copy {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
 }
