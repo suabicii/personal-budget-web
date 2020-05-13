@@ -7,6 +7,7 @@
   font-family: "Roboto", sans-serif;
   --primaryColor: #1e90ff;
   --secondaryColor: #ffa500;
+  --inputButtonColor: #2cbfa4;
 }
 
 header {
@@ -55,6 +56,22 @@ a {
 
 #login {
   background-color: var(--secondaryColor);
+}
+
+.user-menu-form {
+  margin-top: 8px;
+  position: absolute;
+  width: 25px;
+  left: calc(50vw - 25vh / 2);
+  display: block;
+}
+
+.input-button {
+  background-color: var(--inputButtonColor);
+  border: none;
+  padding: 5px 30px;
+  color: #fff;
+  margin-top: 5px;
 }
 
 footer {
