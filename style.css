@@ -61,9 +61,26 @@ a {
 .user-menu-form {
   margin-top: 8px;
   position: absolute;
-  width: 25px;
-  left: calc(50vw - 25vh / 2);
+  width: 500px;
+  left: calc(50vw - 225px);
   display: block;
+}
+
+.row {
+  margin: 20px 0px;
+  margin-bottom: 5px;
+}
+
+.col {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+input {
+  background-color: #fff;
+  border: 3px solid #cccc;
+  border-radius: 5px;
+  width: 500px;
 }
 
 .input-button {
@@ -72,6 +89,13 @@ a {
   padding: 5px 30px;
   color: #fff;
   margin-top: 5px;
+  border-radius: 5px;
+  float: right;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 footer {
