@@ -8,6 +8,7 @@
   --primaryColor: #1e90ff;
   --secondaryColor: #ffa500;
   --inputButtonColor: #2cbfa4;
+  --logoutButtonColor: #ee2e2e;
 }
 
 header {
@@ -30,11 +31,19 @@ header {
   text-align: center;
 }
 
+.main-menu {
+  text-align: center;
+}
+
 .subtitle {
   margin-top: 8px;
 }
 
 .user-menu__list {
+  margin-top: 15px;
+}
+
+.main-menu__list {
   margin-top: 15px;
 }
 
@@ -56,6 +65,26 @@ a {
 
 #login {
   background-color: var(--secondaryColor);
+}
+
+#incomes {
+  background-color: var(--primaryColor);
+}
+
+#expenses {
+  background-color: var(--primaryColor);
+}
+
+#balance {
+  background-color: var(--primaryColor);
+}
+
+#settings {
+  background-color: var(--secondaryColor);
+}
+
+#logout {
+  background-color: var(--logoutButtonColor);
 }
 
 .user-menu-form {
