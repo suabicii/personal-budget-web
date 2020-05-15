@@ -1,7 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  --primaryColor: #1e90ff;
+  --secondaryColor: #ffa500;
+  --inputButtonColor: #2cbfa4;
+}
+
+header {
+  background-color: #222930;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .container {
@@ -9,16 +27,20 @@
 }
 
 .user-menu {
-  position: absolute;
   text-align: center;
-  top: calc(50% - 25vh / 2);
-  left: calc(50% - 25vh / 2);
+}
+
+.subtitle {
+  margin-top: 8px;
+}
+
+.user-menu__list {
+  margin-top: 15px;
 }
 
 ul li {
   list-style: none;
-  display: block;
-  margin-bottom: 35px;
+  display: inline-block;
 }
 
 a {
@@ -29,9 +51,64 @@ a {
 }
 
 #register {
-  background-color: dodgerblue;
+  background-color: var(--primaryColor);
 }
 
 #login {
-  background-color: orange;
+  background-color: var(--secondaryColor);
+}
+
+.user-menu-form {
+  margin-top: 8px;
+  position: absolute;
+  width: 500px;
+  left: calc(50vw - 250px);
+  display: block;
+}
+
+.row {
+  margin: 20px 0px;
+  margin-bottom: 5px;
+}
+
+.col {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+input {
+  background-color: #fff;
+  border: 3px solid #cccc;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.input-button {
+  background-color: var(--inputButtonColor);
+  border: none;
+  padding: 5px 30px;
+  color: #fff;
+  margin-top: 5px;
+  border-radius: 5px;
+  float: right;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  background-color: #222930;
+}
+
+.copy {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
 }
