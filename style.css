@@ -196,14 +196,14 @@ button {
   width: 200px;
   border: none;
   opacity: 1;
-  transition: 0.7s linear;
+  transition: 0.2s linear;
 }
 
 .dropdown-option {
   display: none;
 }
 
-.dropdown .dropdown button:hover {
+.dropdown button:hover {
   opacity: 0.65;
 }
 
