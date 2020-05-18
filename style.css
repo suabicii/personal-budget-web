@@ -171,6 +171,42 @@ button {
   cursor: pointer;
 }
 
+.balance-site__heading {
+  margin-top: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.balance-menu {
+  position: absolute;
+  top: 15%;
+  left: 85%;
+}
+
+.dropdown {
+  display: block;
+}
+
+.dropdown button {
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  background-color: var(--tetriaryColor);
+  width: 200px;
+  border: none;
+  opacity: 1;
+  transition: 0.7s linear;
+}
+
+.dropdown-option {
+  display: none;
+}
+
+.dropdown .dropdown button:hover {
+  opacity: 0.65;
+}
+
 footer {
   position: absolute;
   bottom: 0;
