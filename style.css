@@ -114,7 +114,7 @@ input {
   background-color: #fff;
   border: 3px solid #cccc;
   border-radius: 5px;
-  width: 500px;
+  width: 200px;
 }
 
 .input-button {
@@ -126,6 +126,10 @@ input {
   border-radius: 5px;
   float: right;
   font-size: 1rem;
+}
+
+.finances-site {
+  margin-top: 8px;
 }
 
 button {
