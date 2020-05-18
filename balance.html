@@ -16,16 +16,122 @@
         <div class="balance-site__heading">
             <h2 class="subtile">Przegląd bilansu</h2>
         </div>
-        <main>
-            <div class="balance-menu">
-                <div class="dropdown">
-                    <button class="dropdown-heading">Wybierz okres</button>
-                    <button class="dropdown-option" id="current-month">Bieżący miesiąc</button>
-                    <button class="dropdown-option" id="previous-month">Poprzedni miesiąc</button>
-                    <button class="dropdown-option" id="current-year">Bieżący rok</button>
-                    <button class="dropdown-option" id="custom-date">Niestandardowy</button>
-                </div>
+        <div class="balance-menu">
+            <div class="dropdown">
+                <button class="dropdown-heading">Wybierz okres</button>
+                <button class="dropdown-option" id="current-month">Bieżący miesiąc</button>
+                <button class="dropdown-option" id="previous-month">Poprzedni miesiąc</button>
+                <button class="dropdown-option" id="current-year">Bieżący rok</button>
+                <button class="dropdown-option" id="custom-date">Niestandardowy</button>
             </div>
+        </div>
+        <main>
+            <section class="summary-incomes">
+                <table>
+                    <tr>
+                        <th colspan="2">Przychody</th>
+                    </tr>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Kwota</th>
+                    </tr>
+                    <tr>
+                        <td>Wynagrodzenie</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Odsetki bankowe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sprzedaż na allegro</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Inne</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="summary-expenses">
+                <table>
+                    <tr>
+                        <th colspan="2">Wydatki</th>
+                    </tr>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Kwota</th>
+                    </tr>
+                    <tr>
+                        <td>Jedzenie</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mieszkanie</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Transport</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Telekomunikacja</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Opieka zdrowotna</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ubranie</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Higiena</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dzieci</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Rozrywka</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wycieczka</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Szkolenia</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Książki</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Oszczędności</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Na złotą jesień, czyli emeryturę</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Spłata długów</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Darowizna</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Inne wydatki</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
         </main>
     </section>
     <footer>
@@ -39,7 +145,7 @@
             dropdownOptions.forEach(option => {
                 if (option.style.display == "block") option.style.display = "none";
                 else option.style.display = "block";
-            })
+            });
         }
 
         dropdownHeadingBtn.addEventListener("mouseover", toggleMenuOptions);

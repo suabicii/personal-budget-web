@@ -207,6 +207,27 @@ button {
   opacity: 0.65;
 }
 
+main {
+  position: relative;
+  top: 120px;
+}
+
+table {
+  width: 75%;
+  margin-left: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--borderColor);
+  border-collapse: collapse;
+}
+
+.summary-expenses {
+  margin-top: 20px;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -214,6 +235,12 @@ footer {
   padding-bottom: 10px;
   width: 100vw;
   background-color: #222930;
+}
+
+.balance-site ~ footer {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 150px;
 }
 
 .copy {
