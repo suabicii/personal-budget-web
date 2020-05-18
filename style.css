@@ -8,7 +8,8 @@
   --primaryColor: #1e90ff;
   --secondaryColor: #ffa500;
   --tetriaryColor: #2cbfa4;
-  --logoutButtonColor: #ee2e2e;
+  --dangerColor: #ee2e2e;
+  --borderColor: #cccc;
 }
 
 header {
@@ -80,7 +81,7 @@ a:hover {
 #balance {
   background-color: transparent;
   color: var(--primaryColor);
-  border: 1px solid #cccc;
+  border: 1px solid var(--borderColor);
   padding: 9px;
 }
 
@@ -89,7 +90,7 @@ a:hover {
 }
 
 #logout {
-  background-color: var(--logoutButtonColor);
+  background-color: var(--dangerColor);
 }
 
 .user-menu-form {
@@ -112,7 +113,7 @@ a:hover {
 
 input {
   background-color: #fff;
-  border: 3px solid #cccc;
+  border: 3px solid var(--borderColor);
   border-radius: 5px;
   width: 200px;
 }
@@ -156,9 +157,14 @@ input {
 
 select {
   background-color: #fff;
-  border: 3px solid #cccc;
+  border: 3px solid var(--borderColor);
   border-radius: 5px;
   width: 220px;
+}
+
+textarea {
+  resize: none;
+  display: block;
 }
 
 button {
