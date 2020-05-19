@@ -235,6 +235,28 @@ td {
   margin-top: 20px;
 }
 
+.difference {
+  margin-top: 20px;
+}
+
+.feedback {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.congrats {
+  color: #008000;
+}
+
+.danger {
+  color: var(--dangerColor);
+}
+
+.onMinus {
+  display: none;
+}
+
 footer {
   position: absolute;
   bottom: 0;
