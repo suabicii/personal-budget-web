@@ -6,6 +6,9 @@ let negativeFeedback = document.querySelector(".onMinus");
 let period = document.querySelector(".period");
 let sumOfIncomes = document.getElementById("incomes");
 let sumOfExpenses = document.getElementById("expenses");
+let modal = document.getElementById("modal");
+let closeModalBtn = document.querySelector(".close");
+let customDateForm = document.querySelector("form");
 
 difference.textContent = sumOfIncomes.textContent - sumOfExpenses.textContent;
 
@@ -46,10 +49,21 @@ const choosePeriod = () => {
         period.textContent = "z poprzedniego miesiąca";
       else if (optionID == "current-year")
         period.textContent = "z bieżącego roku";
-      else period.textContent = "z wybranego okresu";
+      else {
+        period.textContent = "z wybranego okresu";
+        modal.style.display = "block";
+      }
     });
   });
 };
+
+// Modal
+
+closeModalBtn.addEventListener("click", () => (modal.style.display = "none"));
+customDateForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  modal.style.display = "none";
+});
 
 dropdownHeadingBtn.addEventListener("mouseover", toggleMenuOptions);
 dropdownHeadingBtn.addEventListener("click", toggleMenuOptions);
