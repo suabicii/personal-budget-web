@@ -4,6 +4,10 @@ let difference = document.getElementById("difference");
 let positiveFeedback = document.querySelector(".onPlus");
 let negativeFeedback = document.querySelector(".onMinus");
 let period = document.querySelector(".period");
+let sumOfIncomes = document.getElementById("incomes");
+let sumOfExpenses = document.getElementById("expenses");
+
+difference.textContent = sumOfIncomes.textContent - sumOfExpenses.textContent;
 
 const toggleMenuOptions = () => {
   dropdownOptions.forEach((option) => {
