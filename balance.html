@@ -12,9 +12,177 @@
     <header>
         <h1 class="title">Menedżer budżetu osobistego</h1>
     </header>
+    <section class="balance-site">
+        <div class="return">
+            <a id="logout" href="main.html">Powrót</a>
+        </div>
+        <div class="balance-site__heading">
+            <h2 class="subtile">Przegląd bilansu <span class="period">z bieżącego miesiąca</span></h2>
+        </div>
+        <div class="balance-menu">
+            <div class="dropdown">
+                <button class="dropdown-heading">Wybierz okres</button>
+                <button class="dropdown-option" id="current-month">Bieżący miesiąc</button>
+                <button class="dropdown-option" id="previous-month">Poprzedni miesiąc</button>
+                <button class="dropdown-option" id="current-year">Bieżący rok</button>
+                <button class="dropdown-option" id="custom-date">Niestandardowy</button>
+            </div>
+        </div>
+        <main>
+            <section class="summary-incomes">
+                <table>
+                    <tr>
+                        <th colspan="2">Przychody</th>
+                    </tr>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Kwota</th>
+                    </tr>
+                    <tr>
+                        <td>Wynagrodzenie</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>Odsetki bankowe</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Sprzedaż na allegro</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Inne</td>
+                        <td>550</td>
+                    </tr>
+                    <tr>
+                        <th>Razem</th>
+                        <td id="incomes">6850</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="summary-expenses">
+                <table>
+                    <tr>
+                        <th colspan="2">Wydatki</th>
+                    </tr>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Kwota</th>
+                    </tr>
+                    <tr>
+                        <td>Jedzenie</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>Mieszkanie</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Transport</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Telekomunikacja</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Opieka zdrowotna</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Ubranie</td>
+                        <td>225</td>
+                    </tr>
+                    <tr>
+                        <td>Higiena</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>Dzieci</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Rozrywka</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Wycieczka</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Szkolenia</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td>Książki</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Oszczędności</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Na złotą jesień, czyli emeryturę</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Spłata długów</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Darowizna</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Inne wydatki</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <th>Razem</th>
+                        <td id="expenses">3280</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="charts">
+                <div id="piechart-incomes"></div>
+                <div id="piechart-expenses"></div>
+            </section>
+            <section class="difference">
+                <table>
+                    <tr>
+                        <th>Różnica</th>
+                        <td id="difference"></td>
+                    </tr>
+                </table>
+                <div class="feedback">
+                    <div class="onPlus">
+                        <h4><span class="congrats">Gratulacje. </span>Świetnie zarządzasz finansami!</h4>
+                    </div>
+                    <div class="onMinus">
+                        <h4><span class="danger">Uważaj! </span>Wpadasz w długi :(</h4>
+                    </div>
+                </div>
+            </section>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h5>Podaj daty początku i końca okresu</h5>
+                    <form action="">
+                        <label>Od: <input type="date" name="start-date" id="start-date" required></label>
+                        <label>Do: <input type="date" name="end-date" id="end-date" required></label>
+                        <div class="row">
+                            <button id="add" type="submit">Wybierz</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
     <footer>
         <h6 class="copy">Copyright &copy; 2020 Michael Slabikovsky</h6>
     </footer>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="balance.js"></script>
 </body>
 
 </html>
