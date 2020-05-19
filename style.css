@@ -171,6 +171,12 @@ button {
   cursor: pointer;
 }
 
+.return {
+  position: absolute;
+  top: 118px;
+  left: 10px;
+}
+
 .balance-site__heading {
   margin-top: 8px;
   position: absolute;
@@ -182,6 +188,7 @@ button {
   position: absolute;
   top: 15%;
   left: 85%;
+  z-index: 1;
 }
 
 .dropdown {
@@ -213,7 +220,7 @@ main {
 }
 
 table {
-  width: 75%;
+  width: 50%;
   margin-left: 10px;
 }
 
@@ -233,7 +240,7 @@ footer {
   bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100vw;
+  width: 100%;
   background-color: #222930;
 }
 
