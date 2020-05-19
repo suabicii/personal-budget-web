@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  --headerAndFooterColor: #222930;
   --primaryColor: #1e90ff;
   --secondaryColor: #ffa500;
   --tetriaryColor: #2cbfa4;
@@ -13,7 +14,7 @@
 }
 
 header {
-  background-color: #222930;
+  background-color: var(--headerAndFooterColor);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -220,7 +221,7 @@ main {
 }
 
 table {
-  width: 50%;
+  width: 45%;
   margin-left: 10px;
 }
 
@@ -257,13 +258,19 @@ td {
   display: none;
 }
 
+.charts {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background-color: #222930;
+  background-color: var(--headerAndFooterColor);
 }
 
 .balance-site ~ footer {

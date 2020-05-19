@@ -61,3 +61,58 @@ document.addEventListener("click", () => {
 chooseMenuOption();
 getFeedback();
 choosePeriod();
+
+// Wykresy kołowe
+
+// Load google charts
+google.charts.load("current", { packages: ["corechart"] });
+
+const drawChartOfIncomes = () => {
+  let data = google.visualization.arrayToDataTable([
+    ["Kategoria", "Kwota"],
+    ["Wynagrodzenie", 5000],
+    ["Odsetki bankowe", 300],
+    ["Sprzedaż na allegro", 1000],
+    ["Inne", 1000],
+  ]);
+
+  let options = { title: "Przychody", width: 550, height: 300 };
+
+  let chart = new google.visualization.PieChart(
+    document.getElementById("piechart-incomes")
+  );
+  chart.draw(data, options);
+};
+
+const drawChartOfExpenses = () => {
+  let data = google.visualization.arrayToDataTable([
+    ["Kategoria", "Kwota"],
+    ["Jedzenie", 600],
+    ["Mieszkanie", 1000],
+    ["Transport", 300],
+    ["Telekomunikacja", 45],
+    ["Opieka zdrowotna", 80],
+    ["Ubranie", 225],
+    ["Higiena", 44],
+    ["Dzieci", 0],
+    ["Rozrywka", 24],
+    ["Wycieczka", 0],
+    ["Szkolenia", 38],
+    ["Książki", 24],
+    ["Oszczędności", 100],
+    ["Na złotą jesień, czyli emeryturę", 500],
+    ["Spłata długów", 0],
+    ["Darowizna", 100],
+    ["Inne wydatki", 200],
+  ]);
+
+  let options = { title: "Wydatki", width: 550, height: 300 };
+
+  let chart = new google.visualization.PieChart(
+    document.getElementById("piechart-expenses")
+  );
+  chart.draw(data, options);
+};
+
+google.charts.setOnLoadCallback(drawChartOfIncomes);
+google.charts.setOnLoadCallback(drawChartOfExpenses);
