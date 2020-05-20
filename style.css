@@ -95,10 +95,11 @@ a:hover {
 }
 
 .user-menu-form {
-  margin-top: 8px;
+  margin-top: 2px;
   position: absolute;
-  width: 500px;
-  left: calc(50vw - 250px);
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
 }
 
@@ -119,14 +120,14 @@ input {
   width: 200px;
 }
 
-.input-button {
+.submit-button {
   background-color: var(--tetriaryColor);
   border: none;
   padding: 5px 30px;
   color: #fff;
-  margin-top: 5px;
+  margin-top: 10px;
   border-radius: 5px;
-  float: right;
+  float: left;
   font-size: 1rem;
 }
 
