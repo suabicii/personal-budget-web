@@ -128,10 +128,16 @@ a:hover {
   margin-bottom: 5px;
 }
 
-.finances-site {
-  margin-top: 8px;
+.finances-site__form {
+  margin-top: 30px;
   position: absolute;
-  left: 55%;
+  left: 54.7%;
+  transform: translateX(-50%);
+}
+
+.finances-site__title {
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
 }
 

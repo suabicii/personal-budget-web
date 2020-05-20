@@ -13,51 +13,65 @@
         <h1 class="title">Menedżer budżetu osobistego</h1>
     </header>
     <section class="finances-site">
-        <h2 class="subtitle">Dodawanie wydatku</h2>
-        <form action="" method="post">
-            <div class="row">
-                <label>Kwota <input type="number" name="amount" id="amount" required></label>
+        <div class="finances-site__title">
+            <h2 class="subtitle">Dodawanie wydatku</h2>
+        </div>
+        <div class="finances-site__form">
+            <form action="">
+                <div class="row">
+                    <label>Kwota <input type="number" name="amount" id="amount" required></label>
+                </div>
+                <div class="row">
+                    <label for="payment">Sposób płatności</label>
+                    <select name="payment" id="payment">
+                        <option value="cash">Gotówka</option>
+                        <option value="debit-card">Karta debetowa</option>
+                        <option value="credit-card">Karta kredytowa</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="category">Kategoria</label>
+                    <select name="category" id="category">
+                        <option value="food">Jedzenie</option>
+                        <option value="home" selected>Mieszkanie</option>
+                        <option value="transport">Transport</option>
+                        <option value="telecommunication">Telekomunikacja</option>
+                        <option value="healthcare">Opieka zdrowotna</option>
+                        <option value="clothes">Ubranie</option>
+                        <option value="hygiene">Higiena</option>
+                        <option value="children">Dzieci</option>
+                        <option value="entertainment">Rozrywka</option>
+                        <option value="trip">Wycieczka</option>
+                        <option value="courses">Szkolenia</option>
+                        <option value="books">Książki</option>
+                        <option value="savings">Oszczędności</option>
+                        <option value="pension">Na złotą jesień, czyli emeryturę</option>
+                        <option value="debts-repayment">Spłata długów</option>
+                        <option value="donation">Darowizna</option>
+                        <option value="other-expenses">Inne wydatki</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="comment">Komentarz (opcjonalnie)</label>
+                    <textarea name="comment" id="comment" cols="20" rows="2"></textarea>
+                </div>
+                <div class="row">
+                    <button id="add" type="submit">Dodaj</button>
+                    <a id="logout" href="main.html">Anuluj</a>
+                </div>
+            </form>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content user-modal">
+                <div class="row user-modal__info">
+                    <h4>Wydatek został dodany</h4>
+                </div>
+                <a class="ok" href="main.html">OK</a>
             </div>
-            <div class="row">
-                <label for="payment">Sposób płatności</label>
-                <select name="payment" id="payment">
-                    <option value="cash">Gotówka</option>
-                    <option value="debit-card">Karta debetowa</option>
-                    <option value="credit-card">Karta kredytowa</option>
-                </select>
-            </div>
-            <div class="row">
-                <label for="category">Kategoria</label>
-                <select name="category" id="category">
-                    <option value="food">Jedzenie</option>
-                    <option value="home" selected>Mieszkanie</option>
-                    <option value="transport">Transport</option>
-                    <option value="telecommunication">Telekomunikacja</option>
-                    <option value="healthcare">Opieka zdrowotna</option>
-                    <option value="clothes">Ubranie</option>
-                    <option value="hygiene">Higiena</option>
-                    <option value="children">Dzieci</option>
-                    <option value="entertainment">Rozrywka</option>
-                    <option value="trip">Wycieczka</option>
-                    <option value="courses">Szkolenia</option>
-                    <option value="books">Książki</option>
-                    <option value="savings">Oszczędności</option>
-                    <option value="pension">Na złotą jesień, czyli emeryturę</option>
-                    <option value="debts-repayment">Spłata długów</option>
-                    <option value="donation">Darowizna</option>
-                    <option value="other-expenses">Inne wydatki</option>
-                </select>
-            </div>
-            <div class="row">
-                <label for="comment">Komentarz (opcjonalnie)</label>
-                <textarea name="comment" id="comment" cols="20" rows="2"></textarea>
-            </div>
-            <div class="row">
-                <button id="add" type="submit">Dodaj</button>
-                <a id="logout" href="main.html">Anuluj</a>
-            </div>
-        </form>
+        </div>
     </section>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="expense.js"></script>
     <footer>
         <h6 class="copy">Copyright &copy; 2020 Michael Slabikovsky</h6>
     </footer>
